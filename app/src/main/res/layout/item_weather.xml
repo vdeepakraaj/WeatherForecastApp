@@ -1,0 +1,88 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:tools="http://schemas.android.com/tools">
+
+  <data>
+
+    <variable
+      name="viewModel"
+      type="com.deepak.weatherapplication.ui.home.HomeViewModel" />
+  </data>
+
+
+  <androidx.cardview.widget.CardView
+    android:id="@+id/cardView"
+    android:layout_width="@dimen/dimen_150dp"
+    android:layout_height="@dimen/dimen_150dp"
+    android:layout_marginStart="@dimen/dimen_10sp"
+    android:layout_marginTop="@dimen/dimen_5sp"
+    android:layout_marginEnd="@dimen/dimen_10sp"
+    android:layout_marginBottom="@dimen/dimen_50dp"
+    app:cardCornerRadius="@dimen/dimen_26sp">
+
+    <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+      <TextView
+        android:id="@+id/tvDayOfWeek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/dimen_10sp"
+        android:layout_marginTop="@dimen/dimen_5sp"
+        android:textSize="@dimen/dimen_20dp"
+        android:textStyle="bold"
+        tools:text="Monday" />
+
+      <TextView
+        android:id="@+id/tvDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:layout_marginStart="@dimen/dimen_10sp"
+        android:layout_marginTop="@dimen/dimen_5sp"
+        android:textSize="@dimen/dimen_16sp"
+        android:layout_below="@id/tvDayOfWeek"
+        android:textStyle="italic"
+        tools:text="Monday" />
+
+      <ImageView
+        android:id="@+id/imageViewForecastIcon"
+        android:layout_width="@dimen/dimen_50dp"
+        android:layout_height="@dimen/dimen_40dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/tvDesc"
+        android:layout_marginEnd="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10sp" />
+
+      <TextView
+        android:id="@+id/tvTempMin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewForecastIcon"
+        android:layout_marginStart="@dimen/dimen_10sp"
+        android:textColor="@color/white"
+        android:layout_alignParentStart="true"
+        android:textSize="@dimen/dimen_20dp"
+        android:textStyle="bold"
+        tools:text="23°" />
+
+      <TextView
+        android:id="@+id/tvTempMax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewForecastIcon"
+        android:textColor="@color/white"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="@dimen/dimen_10sp"
+        android:textSize="@dimen/dimen_20dp"
+        android:textStyle="bold"
+        tools:text="23°" />
+
+    </RelativeLayout>
+  </androidx.cardview.widget.CardView>
+
+</layout>
