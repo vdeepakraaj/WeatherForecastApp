@@ -27,6 +27,11 @@ Output:
 
 
 
-Need to Do:
+To Do:
 1) Allow user to search for a city and find the forecast
 2) Need to alert the user if the forecast is to be raining within 2 hour
+
+
+
+Note:
+OpenweatherMap API will be removed after few days.
